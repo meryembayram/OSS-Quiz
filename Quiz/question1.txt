@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "Please enter the number of n"
+echo "Enter the number of n"
 read number
 
 if [ `expr $number % 2` == 1 ]
@@ -18,12 +18,12 @@ then
    done
 echo ""
 done
-maxvalue=`expr $number - 2`
-for (( i=$maxvalue;i>=1;i=i+2))
+d_max=`expr $number - 2`
+for (( i=$d_max;i>=1;i=i-2))
 do
-   for (( j=i;j<=$maxvalue;j++ ))
+   for (( j=i;j<=$d_max;j++ ))
    do
-   if [ $j -eq $maxvalue ]
+   if [ $j -eq $d_max ]
    then
     echo -n "  "
    fi
